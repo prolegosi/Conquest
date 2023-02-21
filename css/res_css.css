@@ -1,102 +1,78 @@
-/* Reset and base styles  */
+@charset "UTF-8";
+/*Обнуление*/
 * {
-	padding: 0px;
-	margin: 0px;
-	border: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
-:focus,
-:active {
-	/*outline: none;*/
+:focus, :active {
+  outline: none;
 }
 
-a:focus,
-a:active {
-	/* outline: none;*/
+a:focus, a:active {
+  outline: none;
 }
 
-/* Links */
-
-a, a:link, a:visited  {
-    /* color: inherit; */
-    text-decoration: none;
-    /* display: inline-block; */
+nav, footer, header, aside {
+  display: block;
 }
 
-a:hover  {
-    /* color: inherit; */
-    text-decoration: none;
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
-/* Common */
-
-aside, nav, footer, header, section, main {
-	display: block;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-    font-size: inherit;
-	font-weight: inherit;
-}
-
-ul, ul li {
-	list-style: none;
-}
-
-img {
-	vertical-align: top;
-}
-
-img, svg {
-	max-width: 100%;
-	height: auto;
-}
-
-address {
-  font-style: normal;
-}
-
-/* Form */
-
-input, textarea, button, select {
-	font-family: inherit;
-    font-size: inherit;
-    color: inherit;
-    background-color: transparent;
+input, button, textarea {
+  font-family: inherit;
 }
 
 input::-ms-clear {
-	display: none;
+  display: none;
 }
 
-button, input[type="submit"] {
-    display: inline-block;
-    box-shadow: none;
-    background-color: transparent;
-    background: none;
-    cursor: pointer;
-}
-
-input:focus, input:active,
-button:focus, button:active {
-    outline: none;
+button {
+  cursor: pointer;
 }
 
 button::-moz-focus-inner {
-	padding: 0;
-	border: 0;
+  padding: 0;
+  border: 0;
 }
 
-label {
-	cursor: pointer;
+a, a:visited {
+  text-decoration: none;
 }
 
-legend {
-	display: block;
+a:hover {
+  text-decoration: none;
 }
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.bigred {
+  font-size: 20px;
+  color: red;
+}/*# sourceMappingURL=res_css.css.map */
