@@ -75,4 +75,35 @@ h1, h2, h3, h4, h5, h6 {
 .bigred {
   font-size: 20px;
   color: red;
+}
+
+.menu__item {
+  font-family: R;
+}
+
+body {
+  background-color: #FDFDFB;
+}
+
+.screen-width {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  margin: 2.2% 7%;
+}
+
+.logo_img {
+  max-width: 103, 68px;
+}
+
+.menu {
+  width: 100%;
+}
+.menu__box {
+  display: flex;
+  justify-content: space-around;
 }/*# sourceMappingURL=style.css.map */

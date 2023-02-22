@@ -1,0 +1,95 @@
+@import 'res_css.sass';
+
+%f-robo-regular{
+	font-family: ;
+	
+}
+
+
+body{
+	background-color: #FDFDFB;
+}
+.screen-width{
+	max-width: 1366px;
+	margin: 0 auto;
+}
+.head {
+	display: flex;
+	justify-content: space-between;
+	margin: 2.2% 7%;
+	
+}
+.logo {
+	
+		&_img {		
+			max-width: 103,68px;
+		}
+}
+.menu {	
+	width: 100%;
+		&__box {
+			display: flex;
+			justify-content: space-around;
+			
+		}
+
+		&__item {
+			@extend %f-robo-regular;
+
+		}
+
+		&__item-href {
+
+		}
+}
+.options {
+
+		&_img {
+		}
+
+		&__search {
+		}
+
+		&__like {
+		}
+
+		&__count {
+		}
+
+		&__count-text {
+		}
+
+		&__cell {
+		}
+}
+.count {
+}
+.promo {
+
+		&_img-text {
+		}
+
+		&__description-box {
+		}
+
+		&__description-header {
+		}
+
+		&__description-item {
+		}
+
+		&__description-text {
+		}
+
+		&__description-button {
+		}
+
+		&__img-box {
+		}
+
+		&__img-currency {
+		}
+
+		&__img-img {
+		}
+}
