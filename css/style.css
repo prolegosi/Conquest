@@ -78,18 +78,18 @@ body {
   background-color: white;
 }
 
-.catalog__all-href, .promo__description-button, .options__count-text, .menu__item {
+.slide__content, .catalog__all-href, .promo__description-button, .options__count-text, .menu__item {
   font-family: "Roboto";
   font-weight: 400;
   color: #555248;
 }
 
-.promo__description-text {
+.slide__button-href, .promo__description-text {
   font-family: "Roboto";
   font-weight: 300;
 }
 
-.item__href, .catalog__header, .promo__description-item, .promo__description-header {
+.slide__header, .item__href, .catalog__header, .promo__description-item, .promo__description-header {
   font-family: "Playfair Display";
   font-weight: 400;
   color: #1B1A17;
@@ -100,7 +100,7 @@ body {
   font-weight: 700;
 }
 
-.item__price, .promo_img-price, .promo_img-text {
+.counter__count, .item__price, .promo_img-price, .promo_img-text {
   font-family: "Prata";
   font-weight: 300;
 }
@@ -359,6 +359,106 @@ body {
 }
 
 .banner {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.slider {
+  position: relative;
+  margin-top: 90px;
+  overflow: hidden;
+  background-color: #FDFDFB;
+}
+.slider__slide {
+  width: 100%;
+}
+
+.slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.slide::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 550px;
+  background-color: #F7F5EF;
+  top: 0px;
+  left: -30px;
+  z-index: 0;
+}
+.slide__img {
+  margin-left: 178px;
+  margin-top: 52px;
+  z-index: 10;
+}
+.slide__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  padding: 68px;
+  max-width: 530px;
+  margin-top: 70px;
+}
+.slide__header {
+  font-size: 32px;
+  color: #1B1A17;
+  line-height: 0;
+}
+.slide__content {
+  font-weight: 400;
+  color: #1B1A17;
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 50px;
+}
+.slide__button-href {
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #E6C8B4;
+  width: 205px;
+  padding: 22.5px 30px;
+  text-align: center;
+  margin-top: 40px;
+}
+.slide__nav-box {
+  position: relative;
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-right: 200px;
+  padding-bottom: 20px;
+  z-index: 15;
+}
+.slide__circle-1 {
+  position: absolute;
+  width: 365.16px;
+  height: 365.16px;
+  top: -150px;
+  right: -150px;
+  border-radius: 50%;
+  border: 1px solid #E6C8B4;
+}
+.slide__circle-2 {
+  position: absolute;
+  width: 774.38px;
+  height: 774.38px;
+  top: 0;
+  right: -40.5%;
+  border-radius: 50%;
+  border: 1px solid #E6C8B4;
+}
+
+.counter__count {
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0 17px;
+}
+.news {
   max-width: 1366px;
   margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
