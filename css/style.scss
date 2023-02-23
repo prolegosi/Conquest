@@ -1,22 +1,56 @@
 @import 'res_css.sass';
-
-%f-robo-regular{
-	font-family: ;
-	
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Prata&family=Roboto:wght@300;400;500;700&display=swap');
 
 body{
 	background-color: #FDFDFB;
 }
+// Перременные#######################
+%roboto-bold{
+	font-family: 'Roboto';
+	font-weight: bold;
+	font-size: 14px;
+	color: #fff;
+}
+%roboto-regular{
+	font-family: 'Roboto';
+	font-weight: 400;
+	color: #555248;	
+}
+%roboto-light{
+	font-family: 'Roboto';
+	font-weight: 300;
+}
+%playfair-regular{
+	font-family: 'Playfair Display';
+	font-weight: 400;
+	color: #1B1A17;
+}
+%playfair-bold{
+	font-family: 'Playfair Display';
+	font-weight: 700;
+}
+%prata-regular{
+	font-family: 'Prata';
+	font-weight: 300;
+}
+$black :#1B1A17;
+$white : #fff;
+$gray :#555248;
+$pink :#E6C8B4;
+$white-d: #FDFDFB;
+// ##################################
 .screen-width{
 	max-width: 1366px;
-	margin: 0 auto;
+	margin: 0 auto;	
+	background-color: $white-d;
 }
 .head {
 	display: flex;
 	justify-content: space-between;
-	margin: 2.2% 7%;
+	
+	margin: 31px 97px;
 	
 }
 .logo {
@@ -26,70 +60,165 @@ body{
 		}
 }
 .menu {	
-	width: 100%;
-		&__box {
+	
+		&__box {	
 			display: flex;
-			justify-content: space-around;
+			justify-content: space-between;
+			width: 422px;
+			margin-top: 5px;
 			
 		}
 
 		&__item {
-			@extend %f-robo-regular;
-
+			@extend %roboto-regular;
+					
 		}
 
 		&__item-href {
-
+			color:$gray;
 		}
 }
 .options {
-
-		&_img {
+	display: flex;
+	justify-content: space-around;
+	width: 120px;	
+	margin-top: 10px;
+	padding-left: 4px;
+		&__item {
+			margin-left: 10px;
 		}
-
-		&__search {
-		}
-
-		&__like {
-		}
-
 		&__count {
+			position: relative;
+			bottom: 22px;
+			left: 20px;	
+			width: 15px;
+			height: 15px;			
+			background-color: $pink;
+			border-radius: 50%;	
+			text-align: center				
 		}
-
 		&__count-text {
+			@extend %roboto-regular;			
+			font-size: 9px;
+			color: $black;
+			padding-top: 3px;
 		}
+}
 
-		&__cell {
-		}
-}
-.count {
-}
 .promo {
-
-		&_img-text {
-		}
-
+	position: relative;
+	display: flex;
+	justify-content: space-around;	
+	overflow: hidden;
+	&::before{
+		content: "";
+		position: absolute;
+		width: 477px;
+		height: 910px;
+		top: -99px;
+		left: 466px;
+		border-radius: 470px 0 0 470px;
+		z-index: 0;
+		background: linear-gradient(-15deg, rgb(234, 227, 212), rgba(234, 227, 212, 0));
+	}	
 		&__description-box {
+			display: flex;
+			justify-content: space-around;
+			flex-direction: column;
+			margin-top: 225px;
+			margin-left: 140px;									
+			height: 300px;
+			width: 400px;
+		
 		}
 
-		&__description-header {
+		&__description-header {			
+			@extend %playfair-regular;
+			position: relative;
+			font-size: 45px;
+			line-height: 0.2;
+			color: $black;
+			&::before{
+				content: '';
+				position: absolute;
+				width: 55px;
+				border-top: 1px solid $gray;
+				top: 9px;
+				left: -65px;
+			}
 		}
 
 		&__description-item {
+			@extend%playfair-regular;
+			
+			font-size: 30px;
+			color: $black;
 		}
 
 		&__description-text {
+			@extend %roboto-light;
+			line-height: 1.5;
+			font-size: 14;
+			color: $black;			
 		}
-
-		&__description-button {
+		&__description-button {			
+			@extend %roboto-regular;
+			font-size: 12px;
+			font-weight: 200;
+			color: $white;
+			text-transform: uppercase;
+			display: block;
+			width: 200px ;
+			height: 60px;
+			padding-top: 25px;
+			text-align: center;			
+			background-color: $gray;
+			letter-spacing: 0.7px;
 		}
-
 		&__img-box {
+			position: relative;
+			width: 502px;
+			height: 750px;
+			margin-right: 155px;	
+					
 		}
-
+		&_img-text {			
+			@extend %prata-regular;
+			font-size: 16px;
+			position: absolute;
+			width: 150px;
+			top: 619px;;
+			left: 460px;
+			&::before{
+				content: '';
+				position: absolute;
+				width: 50px;
+				border-top: 1px solid $gray;
+				top: 7px;
+				left: -65px;
+			}
+		}
 		&__img-currency {
+			margin-left: 5px
 		}
-
+		&_img-price{
+			@extend %prata-regular;
+			font-size: 16px;
+			position: absolute;
+			width: 150px;
+			top: 120px;
+			left: -88px;
+			&::after{
+				content: '';
+				position: absolute;
+				width: 55px;
+				border-top: 1px solid $gray;
+				top: 7px;
+				left: 90px;
+			}			
+		}
 		&__img-img {
+			position: relative;
+			margin-top: -27px;
 		}
 }
