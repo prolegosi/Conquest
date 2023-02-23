@@ -75,10 +75,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background-color: #FDFDFB;
+  background-color: white;
 }
 
-.promo__description-button, .options__count-text, .menu__item {
+.catalog__all-href, .promo__description-button, .options__count-text, .menu__item {
   font-family: "Roboto";
   font-weight: 400;
   color: #555248;
@@ -89,13 +89,18 @@ body {
   font-weight: 300;
 }
 
-.promo__description-item, .promo__description-header {
+.item__href, .catalog__header, .promo__description-item, .promo__description-header {
   font-family: "Playfair Display";
   font-weight: 400;
   color: #1B1A17;
 }
 
-.promo_img-price, .promo_img-text {
+.item__header {
+  font-family: "Playfair Display";
+  font-weight: 700;
+}
+
+.item__price, .promo_img-price, .promo_img-text {
   font-family: "Prata";
   font-weight: 300;
 }
@@ -256,4 +261,104 @@ body {
 .promo__img-img {
   position: relative;
   margin-top: -27px;
+}
+
+.catalog {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.catalog__header-wrapper {
+  width: 100%;
+}
+.catalog__header {
+  font-size: 32px;
+  color: #1B1A17;
+  margin-top: 80px;
+  width: 100%;
+  text-align: center;
+}
+.catalog__all-href {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  color: #1B1A17;
+  width: 92.7%;
+  text-align: right;
+}
+.catalog__all-href::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  border-top: 1px solid #C4C0B6;
+  bottom: -10px;
+  right: 0;
+}
+.catalog__item-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 365px;
+  height: 467px;
+  margin: 0 15px;
+  padding: 46px 38px;
+  background-color: #FDFDFB;
+}
+.item__header {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #1B1A17;
+}
+.item__price {
+  font-size: 13px;
+  color: #1B1A17;
+  margin-top: 10px;
+}
+.item__price-currency {
+  height: 11px;
+}
+.item__img-wrapper {
+  width: 316px;
+  height: 316px;
+  border-radius: 50%;
+  text-align: center;
+  background: linear-gradient(-90deg, rgb(234, 227, 212), rgba(234, 227, 212, 0));
+}
+.item__img {
+  margin-top: 1px;
+  border-radius: 50%;
+  width: 313px;
+  height: 313px;
+  background-color: #FDFDFB;
+}
+.item__href {
+  color: #1B1A17;
+  font-size: 16px;
+  position: relative;
+  margin-left: 50px;
+  margin-top: 21px;
+}
+.item__href::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  border-top: 1px solid #1B1A17;
+  top: 9px;
+  left: -49px;
+}
+
+.banner {
+  max-width: 1366px;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
