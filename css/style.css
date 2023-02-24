@@ -112,6 +112,18 @@ body {
   font-weight: 300;
 }
 
+.text_shadow:hover, .footer__container:hover, .news__content:hover, .news__header:hover, .slide__content:hover, .slide__header:hover, .item__href:hover, .item__price:hover, .item__header:hover, .catalog__all-href:hover, .catalog__header:hover, .promo_img-price:hover, .promo_img-text:hover, .promo__description-text:hover, .promo__description-item:hover, .promo__description-header:hover {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24);
+  transition-property: text-shadow;
+  transition-duration: 0.2s;
+}
+
+.box_shadow:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24);
+  transition-property: box-shadow;
+  transition-duration: 0.2s;
+}
+
 .screen-width {
   max-width: 1366px;
   margin: 0 auto;
@@ -121,7 +133,8 @@ body {
 .head {
   display: flex;
   justify-content: space-between;
-  margin: 31px 97px;
+  margin: 0px 97px;
+  padding: 31px 0;
 }
 
 .logo_img {
