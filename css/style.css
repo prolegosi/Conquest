@@ -78,7 +78,7 @@ body {
   background-color: white;
 }
 
-.slide__content, .catalog__all-href, .promo__description-button, .options__count-text, .menu__item {
+.news__content, .slide__content, .catalog__all-href, .promo__description-button, .options__count-text, .menu__item {
   font-family: "Roboto";
   font-weight: 400;
   color: #555248;
@@ -89,7 +89,7 @@ body {
   font-weight: 300;
 }
 
-.slide__header, .item__href, .catalog__header, .promo__description-item, .promo__description-header {
+.news__header, .slide__header, .item__href, .catalog__header, .promo__description-item, .promo__description-header {
   font-family: "Playfair Display";
   font-weight: 400;
   color: #1B1A17;
@@ -461,4 +461,45 @@ body {
 .news {
   max-width: 1366px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: top;
+}
+.news__text-box {
+  margin-top: 225px;
+  margin-left: 65px;
+}
+.news__header {
+  font-size: 32px;
+  color: #1B1A17;
+}
+.news__content {
+  font-size: 16px;
+  color: #1B1A17;
+  line-height: 1.5;
+  max-width: 370px;
+  margin-top: 35px;
+}
+.news__social-networks {
+  margin-top: 115px;
+}
+.news__social-networks-href {
+  margin-right: 9px;
+}
+.news__social-img {
+  width: 23px;
+  height: 23px;
+}
+.news__img-box {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 80px;
+  margin-right: 60px;
+}
+.news__img-subbox {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  margin-right: 13px;
 }/*# sourceMappingURL=style.css.map */
